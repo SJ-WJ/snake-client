@@ -28,6 +28,11 @@ const handleUserInput = function(key) {
   if (key === 'd') { // "D, moving right"
     connection.write("Move: right");
   }
+
+  //Say Message
+  if (key === 'o') {
+    connection.write("Say: The Champ is Here!");
+  }
 };
 
 module.exports = setupInput;
